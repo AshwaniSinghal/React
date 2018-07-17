@@ -1,0 +1,22 @@
+React.js version that you are using?
+Difference between componentWillMount() and componentDidMount()?
+What happens to the state when it is changed?
+What is render function in React and its uses ?
+Which is the best place to modify the states and why?
+Can we change the state in render? Is it a good practice?
+Can we modify the state in life-cycle functions? If yes Why ? If No why?
+What is Virtual Diffing Mechanism and how it works?
+What is Virtual DOM concept and how it works?
+Advantages of React.js with other frameworks.
+What makes React faster?
+How React.js works?
+What is Redux and how it works? 
+What are the different stages in Redux?
+Which stage is used to update the state in Redux and how to update? – reducer is used and can be triggerd using action
+What is JSX? 
+Is JSX supported on all browsers by default?
+How to make the browser compatible with JSX code?
+Where to include template in React?
+Whether render() calls before componentDidMount() if we alters the state? If yes then Why? if no then why?
+How updates happening in react?
+If we change a text in input box, how it differs from react and other frameworks?
