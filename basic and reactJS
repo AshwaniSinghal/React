@@ -1,0 +1,45 @@
+
+Required Technology : 
+Mandatory : React, Redux, React Router, ES6 Javascript Arrrow functions, Html, CSS, JS, Chai, Mocha, Jest
+Optional : Material UI
+General: Github, Jenkins, TDD/BDD, 
+
+
+Questions :
+Advance React : 
+- Explain Component lifecycle of react js with sequence and explaination each method.
+- What is state Lifting in react js
+- How React.js works?
+- What is Redux and how it works ?
+- What is higer order component and how it works?
+- Difference b/w framework and liberary
+- Server side rendering
+
+Basic :
+- How many years of experience ?
+- Which library are you using for components in angular 2?
+- what type of components have you build?
+- How is react different than other liberary
+- what is component state and props
+- can we change props values inside a component
+- How do react dom update the elements ? 
+  Ans : React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary
+- What is functional and class component
+  Ans : JS function in JSX file is functional component
+	class Welcome extends React.Component { render() { return <h1>Hello, {this.props.name}</h1>; }}
+- How will you pass css and data to HTML in react component and how it is different from normal javascript.
+- What is childern component in react.
+- What is PropTypes in react
+  Ans : PropTypes is used for typechecking in react. It tells the developer what are all the input required in that component and what are the mandator inputs.
+
+
+- What isRedux and how it works?
+- what is reducer 
+  Ans : Reducers are just pure functions that take the previous state and an action, and return the next state. Remember to return new state objects, instead of 	mutating the previous state
+
+- Benefits of Redux
+- DIff between const, let, var
+- Difference b/w smart component, class component
+- Diff b/w dumb component, presentional component and functional component
+- TDD and BDD 
+- What are HOC
