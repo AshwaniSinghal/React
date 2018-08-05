@@ -21,6 +21,7 @@ Basic :
 - what type of components have you build?
 - How is react different than other liberary
 - what is component state and props
+- In which lifecycle method we can use "this.state" to assign values.
 - can we change props values inside a component
 - How do react dom update the elements ? 
   Ans : React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary
