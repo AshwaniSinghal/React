@@ -1,0 +1,36 @@
+1. What is the difference between below two code snippt.
+Ans: In first case, a different callback is created each time the button renders.n most cases, this is fine. 
+However, if this callback is passed as a prop to lower components, those components might do an extra re-rendering. 
+
+class LoggingButton extends React.Component {
+  handleClick(event) {
+    console.log("This is sample function");
+  }
+
+  render() {
+    return (
+      <button onClick={(event) => this.handleClick(event)}>
+        Click me
+      </button>
+    );
+  }
+}
+
+class LoggingButton extends React.Component {
+  constructor() {
+    super(props);
+    
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    console.log("This is sample function");
+  }
+
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        Click me
+      </button>
+    );
+  }
+}
