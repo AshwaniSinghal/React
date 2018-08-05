@@ -34,3 +34,12 @@ class LoggingButton extends React.Component {
     );
   }
 }
+
+2. Why react gives warning if we don't add key to below code?
+Ans: Because React use Key to identify which element has been added, deleted or updated in DOM.
+
+const listItems = numbers.map((number) =>
+  <li key={number.toString()}>
+    {number}
+  </li>
+);
