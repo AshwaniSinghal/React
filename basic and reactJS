@@ -56,3 +56,7 @@ Basic :
 - Diff b/w dumb component, presentional component and functional component
 - TDD and BDD 
 - What are HOC
+- What is code spliting?
+  Ans: To avoid winding up with a large bundle, it’s good to get ahead of the problem and start “splitting” your bundle. 
+       Code-Splitting is a feature supported by bundlers like Webpack and Browserify (via factor-bundle) which can create 
+       multiple bundles that can be dynamically loaded at runtime.
