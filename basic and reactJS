@@ -38,6 +38,10 @@ Basic :
   
   Ans: C
 - What is childern component in react.
+- What are Controlled Components in react?
+  Ans : React state is the “single source of truth”. Then the React component that renders a form also controls 
+        what happens in that form on subsequent user input. An input form element whose value is controlled by React 
+	in this way is called a “controlled component”.
 - What is PropTypes in react
   Ans : PropTypes is used for typechecking in react. It tells the developer what are all the input required in that component and what are the mandator inputs.
 
