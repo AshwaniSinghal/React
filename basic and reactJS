@@ -19,9 +19,10 @@ Basic :
 - How many years of experience ?
 - Which library are you using for components in angular 2?
 - what type of components have you build?
-- How is react different than other liberary
-- what is component state and props
-- In which lifecycle method we can use "this.state" to assign values.
+- How is react different than other liberary?
+- what is component state and props?
+- In which lifecycle method we can use "this.state" to assign values ?
+   Ans : Only constructor. In rest of the lifecycle methods or function we ned to use this.setState({})
 - can we change props values inside a component
 - How do react dom update the elements ? 
   Ans : React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary
@@ -29,6 +30,13 @@ Basic :
   Ans : JS function in JSX file is functional component
 	class Welcome extends React.Component { render() { return <h1>Hello, {this.props.name}</h1>; }}
 - How will you pass css and data to HTML in react component and how it is different from normal javascript.
+- Which one of below is not a react keyword:
+  A. State 
+  B. Props 
+  C. id 
+  D. key
+  
+  Ans: C
 - What is childern component in react.
 - What is PropTypes in react
   Ans : PropTypes is used for typechecking in react. It tells the developer what are all the input required in that component and what are the mandator inputs.
