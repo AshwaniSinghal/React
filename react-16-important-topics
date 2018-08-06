@@ -1,0 +1,28 @@
+1. What is Error Boundaries?
+  Ans: Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, 
+       log those errors, and display a fallback UI instead of the component tree that crashed. 
+       Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree 
+       A class component becomes an error boundary if it defines a new lifecycle method called 
+       componentDidCatch(error, info)
+       Only class components can be error boundaries.
+       Error boundaries do not catch errors inside event handlers.
+       
+ 2. What is Forwarding Refs ?
+   Ans: Ref forwarding is a technique for automatically passing a ref through a component to one of its children.
+        Ref forwarding is an opt-in feature that lets some components take a ref they receive, 
+        and pass it further down to a child
+        
+3. What is Fragments ?
+  Ans: A common pattern in React is for a component to return multiple elements. 
+       Fragments let you group a list of children without adding extra nodes to the DOM.
+       <React.Fragment>
+        <td>Hello</td>
+        <td>World</td>
+      </React.Fragment>
+
+4. What are HOC ?
+  Ans: A higher-order component is a function that takes a component and returns a new component.
+       Main benefit of using HOC is to avoid duplication of code between components.
+       e.g. : Component A -> Set event listerns during mounting, remove event listerns during unmounting, Call datasource on change.
+              Component B -> Set event listerns during mounting, remove event listerns during unmounting, Call datasource on change.
+         To avoid this we can write a HOC.
