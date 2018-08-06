@@ -25,4 +25,10 @@
        Main benefit of using HOC is to avoid duplication of code between components.
        e.g. : Component A -> Set event listerns during mounting, remove event listerns during unmounting, Call datasource on change.
               Component B -> Set event listerns during mounting, remove event listerns during unmounting, Call datasource on change.
-         To avoid this we can write a HOC.
+              To avoid this we can write a HOC.
+              Example of HOC is connect() which connect react with redux
+              
+5. How to Increase performance of React Application ?
+ Ans: Use Production Builds.
+      Profiling Components with the Chrome Performance Tab - To find which places is taking more time.
+      Avoid Reconciliation by using ShouldComponentUpdate to avoid un-necessary renders.
