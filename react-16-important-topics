@@ -32,3 +32,12 @@
  Ans: Use Production Builds.
       Profiling Components with the Chrome Performance Tab - To find which places is taking more time.
       Avoid Reconciliation by using ShouldComponentUpdate to avoid un-necessary renders.
+
+6. What is Reconciliation ?
+  Ans: It is an algorithem which react use to identify the change between previous tree and new tree when re-render happens.
+  
+7. What is Refs ?
+  Ans: Refs provide a way to access DOM nodes or React elements created in the render method.
+   Uses: Can be used to access children element directly from parent.
+         Managing focus, text selection, or media playback.
+         Integrating with third-party DOM libraries.
