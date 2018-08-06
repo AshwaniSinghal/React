@@ -83,3 +83,8 @@
         static getDerivedStateFromProps(props, state): 
                   It is invoked right before calling the render method, both on the initial mount and on subsequent updates.
                   It should return an object to update the state, or null to update nothing
+                  
+10. What is synthetic Events?
+  Ans: A cross-browser wrapper around the browser’s native event.All event handlers will be passed instances of SyntheticEvent.
+       The SyntheticEvent is pooled. This means that the SyntheticEvent object will be reused and 
+       all properties will be nullified after the event callback has been invoked. 
