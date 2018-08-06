@@ -37,7 +37,16 @@
   Ans: It is an algorithem which react use to identify the change between previous tree and new tree when re-render happens.
   
 7. What is Refs ?
-  Ans: Refs provide a way to access DOM nodes or React elements created in the render method.
+  Ans: Refs provide a way to access DOM nodes or React elements created in the render method. Refs are created using React.createRef() 
+       and attached to React elements via the ref attribute.
+       const node = this.myRef.current;
    Uses: Can be used to access children element directly from parent.
          Managing focus, text selection, or media playback.
          Integrating with third-party DOM libraries.
+         
+ 8. What is render Props ?
+   Ans: A component with a render prop takes a function that returns a React element and calls it instead of implementing 
+        its own render logic.
+        <DataProvider render={data => (
+          <h1>Hello {data.target}</h1>
+        )}/>
