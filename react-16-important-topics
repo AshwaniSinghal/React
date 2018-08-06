@@ -57,23 +57,29 @@
         
  9. Lifecycle Methods:
    Ans: constructor()
-        static getDerivedStateFromProps()
         render()
         componentDidMount()
         UNSAFE_componentWillMount()
         
-        static getDerivedStateFromProps()
         shouldComponentUpdate()
-        render()
-        getSnapshotBeforeUpdate()
         componentDidUpdate()
         UNSAFE_componentWillUpdate()
         UNSAFE_componentWillReceiveProps()
         
         componentWillUnmount()
-        componentDidCatch()
+        componentDidCatch(error, info)
+        shouldComponentUpdate()
         
         setState()
         forceUpdate()
         defaultProps
         displayName
+        
+        getSnapshotBeforeUpdate():
+           is invoked right before the most recently rendered output is committed to the DOM. 
+           It enables your component to capture some information from the DOM (e.g. scroll position) before it is 
+           potentially changed
+           
+        static getDerivedStateFromProps(props, state): 
+                  It is invoked right before calling the render method, both on the initial mount and on subsequent updates.
+                  It should return an object to update the state, or null to update nothing
