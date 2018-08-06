@@ -50,3 +50,30 @@
         <DataProvider render={data => (
           <h1>Hello {data.target}</h1>
         )}/>
+ 
+ 9. What are Pure Components?
+   Ans: Pure Components are the one which implement shouldComponentUpdate internally and do shallow comparsion between
+        previous state and props with new one to avoid extra re-rendering.
+        
+ 9. Lifecycle Methods:
+   Ans: constructor()
+        static getDerivedStateFromProps()
+        render()
+        componentDidMount()
+        UNSAFE_componentWillMount()
+        
+        static getDerivedStateFromProps()
+        shouldComponentUpdate()
+        render()
+        getSnapshotBeforeUpdate()
+        componentDidUpdate()
+        UNSAFE_componentWillUpdate()
+        UNSAFE_componentWillReceiveProps()
+        
+        componentWillUnmount()
+        componentDidCatch()
+        
+        setState()
+        forceUpdate()
+        defaultProps
+        displayName
