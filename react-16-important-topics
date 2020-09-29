@@ -32,6 +32,18 @@
  Ans: Use Production Builds.
       Profiling Components with the Chrome Performance Tab - To find which places is taking more time.
       Avoid Reconciliation by using ShouldComponentUpdate to avoid un-necessary renders.
+      Virtulaize the Long Lists. - Means we can render the more items in list as an when needed.
+      
+6. What are Portals ?
+  Ans: Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
+       ReactDOM.createPortal(child, container)     
+       
+6. What are Profiler ?
+  Ans: The Profiler measures how often a React application renders and what the “cost” of rendering is.
+       Its purpose is to help identify parts of an application that are slow and may benefit from optimizations.
+       The Profiler requires an onRender function as a prop. React calls this function any time a component within the profiled tree “commits” an update.
+       It receives parameters describing what was rendered and how long it took.
+       <Profiler id="uniqueId" onRender={callback}>
 
 6. What is Reconciliation ?
   Ans: It is an algorithem which react use to identify the change between previous tree and new tree when re-render happens.
