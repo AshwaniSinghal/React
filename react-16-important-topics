@@ -159,3 +159,14 @@
     ReactDOM.unmountComponentAtNode()
     ReactDOM.findDOMNode() -> deprycated
     ReactDOM.createPortal(child, container where child needs to be added in DOM)
+    
+17. DOM Elements:
+    checked -> To mark a checkbox/radio button as default checked for input type="checkbox".
+    className -> To pass css to html
+    style
+    htmlFor
+    onChange
+    value -> To set the values of <input> and <textarea>. This is used on select tag as well to make any option default selected.
+    dangerouslySetInnerHTML
+    suppressContentEditableWarning
+    suppressHydrationWarning
