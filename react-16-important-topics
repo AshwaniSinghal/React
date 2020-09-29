@@ -124,3 +124,38 @@
                   It is invoked right before calling the render method, both on the initial mount and on subsequent updates.
                   It should return an object to update the state, or null to update nothing
                  
+                 
+15. React API's
+    
+    For Creating Component:
+    React.Component
+    React.PureComponent
+    React.memo
+    
+    For Creating Component without JSX:
+    React.createElement()
+    React.createFactory()
+    
+    For Manuplating Elements:
+    cloneElement()
+    isValidElement()
+    React.Children
+    
+    For Nesting multiple HTML without adding extra element in tree:
+    React.Fragment
+    
+    For Creating and Forwarding ref's
+    React.CreateRef()
+    React.ForwardRef()
+    
+    Suspense: Suspense lets components “wait” for something before rendering. Today, Suspense only supports one use case: loading components dynamically with React.lazy
+    React.Suspense
+    React.lazy -> lets you define a component that is loaded dynamically. This helps reduce the bundle size to delay loading components that aren’t used during the initial render.. But this require to have Suspese somewhere above in tree.
+    
+    
+16. ReactDOM methods:
+    ReactDOM.render(component, container where component needs to be added in DOM)
+    ReactDOM.hyderate()
+    ReactDOM.unmountComponentAtNode()
+    ReactDOM.findDOMNode() -> deprycated
+    ReactDOM.createPortal(child, container where child needs to be added in DOM)
