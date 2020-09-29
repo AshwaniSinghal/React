@@ -90,6 +90,10 @@
        MyComponent.propTypes = {name: PropTypes.string}
        MyComponent.defaultProps = {name: "Ashwani"} -> This will insure that component gets "Ashwani" as default value of name property (if consumer has not provided
        any value)
+       
+15. What is context in React ?
+  Ans: Context are used to pass something to all the children of react tree. Context are created once and will be accessable by all the children's underneath.
+       e.g.: theme.
         
 15. Lifecycle Methods: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
    Ans: Mount Sequence:
