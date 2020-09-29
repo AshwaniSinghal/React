@@ -7,10 +7,10 @@
        Only class components can be error boundaries.
        Error boundaries do not catch errors inside event handlers.
        
- 2. What is Forwarding Refs ?
+2. What is Forwarding Refs ?
    Ans: Ref forwarding is a technique for automatically passing a ref through a component to one of its children.
-        Ref forwarding is an opt-in feature that lets some components take a ref they receive, 
-        and pass it further down to a child
+        Ref forwarding is an opt-in feature that lets some components take a ref they receive, and pass it further down to a child
+        const MyButton = React.forwardRef((props, ref) => <button ref= {ref} {...props}>Submit</button>)
         
 3. What is Fragments ?
   Ans: A common pattern in React is for a component to return multiple elements. 
@@ -38,50 +38,78 @@
   Ans: Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
        ReactDOM.createPortal(child, container)     
        
-6. What are Profiler ?
+7. What are Profiler ?
   Ans: The Profiler measures how often a React application renders and what the “cost” of rendering is.
        Its purpose is to help identify parts of an application that are slow and may benefit from optimizations.
        The Profiler requires an onRender function as a prop. React calls this function any time a component within the profiled tree “commits” an update.
        It receives parameters describing what was rendered and how long it took.
        <Profiler id="uniqueId" onRender={callback}>
 
-6. What is Reconciliation ?
+8. What is Reconciliation ?
   Ans: It is an algorithem which react use to identify the change between previous tree and new tree when re-render happens.
   
-7. What is Refs ?
+9. What is Refs ?
   Ans: Refs provide a way to access DOM nodes or React elements created in the render method. Refs are created using React.createRef() 
-       and attached to React elements via the ref attribute.
-       const node = this.myRef.current;
+       and attached to React elements via the ref attribute. HTML element/Node instance attached with ref can be accessed via "this.myRef.current"
    Uses: Can be used to access children element directly from parent.
          Managing focus, text selection, or media playback.
          Integrating with third-party DOM libraries.
          
- 8. What is render Props ?
+10. What is render Props ?
    Ans: A component with a render prop takes a function that returns a React element and calls it instead of implementing 
         its own render logic.
         <DataProvider render={data => (
           <h1>Hello {data.target}</h1>
         )}/>
  
- 9. What are Pure Components?
+11. What are Pure Components?
    Ans: Pure Components are the one which implement shouldComponentUpdate internally and do shallow comparsion between
         previous state and props with new one to avoid extra re-rendering.
         
- 9. Lifecycle Methods:
-   Ans: constructor()
+12. What is synthetic Events?
+  Ans: A cross-browser wrapper around the browser’s native event.All event handlers will be passed instances of SyntheticEvent.
+       The SyntheticEvent is pooled. This means that the SyntheticEvent object will be reused and 
+       all properties will be nullified after the event callback has been invoked.
+       e.g: onChange, onCopy etc.
+       
+13. What is Strict Mode in React ?
+  Ans: StrictMode is a tool for highlighting potential problems in an application. Like Fragment, StrictMode does not render any visible UI.
+       It activates additional checks and warnings for its descendants. Strict Mode will help in :
+       Identifying components with unsafe lifecycles; Warning about legacy string ref API usage; Warning about deprecated findDOMNode usage
+       Detecting unexpected side effects; Detecting legacy context API
+       e.g. :
+       <div>
+       <Header />
+       <React.StrictMode><Component1 /><Component2 /></React.StrictMode>
+       <Footer />
+       </div>
+       
+14. What is Typechecking in react ?
+  Ans: It is a way in component to define what kind of input can be passed to each prop. We can use Flow or Typescript for larger app's. React provides prop-types
+       as inbuilt library for this purpose.
+       MyComponent.propTypes = {name: PropTypes.string}
+       MyComponent.defaultProps = {name: "Ashwani"} -> This will insure that component gets "Ashwani" as default value of name property (if consumer has not provided
+       any value)
+        
+15. Lifecycle Methods: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+   Ans: Mount Sequence:
+        constructor()
+        getDerivedStateFromProps()
         render()
         componentDidMount()
-        UNSAFE_componentWillMount()
         
+        Update Sequence:
+        getDerivedStateFromProps()
         shouldComponentUpdate()
+        render()
+        getSnapshotBeforeUpdate()
         componentDidUpdate()
-        UNSAFE_componentWillUpdate()
-        UNSAFE_componentWillReceiveProps()
         
+        UnMount Sequence:
         componentWillUnmount()
-        componentDidCatch(error, info)
-        shouldComponentUpdate()
         
+        Extra Methods:
+        componentDidCatch(error, info)
         setState()
         forceUpdate()
         defaultProps
@@ -95,8 +123,4 @@
         static getDerivedStateFromProps(props, state): 
                   It is invoked right before calling the render method, both on the initial mount and on subsequent updates.
                   It should return an object to update the state, or null to update nothing
-                  
-10. What is synthetic Events?
-  Ans: A cross-browser wrapper around the browser’s native event.All event handlers will be passed instances of SyntheticEvent.
-       The SyntheticEvent is pooled. This means that the SyntheticEvent object will be reused and 
-       all properties will be nullified after the event callback has been invoked. 
+                 
