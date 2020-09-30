@@ -1,0 +1,39 @@
+1. What is react hooks ?
+  Ans: Hooks are functions that let you “hook into” React features from function components. Their names always start with "use"
+
+2. Advantage of using react hooks
+  - It makes the stateful logic reusable between components.
+  - You can access state in functional components.
+  - Does not provide all the lifecycle method support such as getDrivedStateFromProps, getSnapshotBeforeUpdate
+  - Classes confuse both people and machines. Since classes is associated with this variable which has different meaning in JS than other programming languages.
+  
+3. Disadvantage of using react hooks
+    - It override the state variable completely instead of shallow merge it existing state
+    - It can't be used inside class components or regular javascript function. It can only be used in functional components.
+    - Only call Hooks at the top level. Don’t call Hooks inside loops, conditions, or nested functions
+    - Not recommended completely by react team. It’s still in experimental phase
+  
+4. What is useState Hook ?
+  Ans: It is used to drive the state of a component
+   function MyComponent () {
+    const [count, updateCount] = setState(0);
+
+    return (
+      <div>
+        <button onChange={() => updateCount(count + 1)}>
+          click me.!
+        </button>
+      </div>
+    )
+  }
+  
+5. What is useEffect Hook ?
+  Ans: It is used majorily to execute lifecycle method, Data fetching, setting up a subscription, and manually changing the DOM in React components.
+       If we return a function then it will be called during unmounting of the component. Effects will be executed in the order they are defined in component.
+       useEffect(() => {
+         Chat.subscribe();
+
+         return function unsubscribe() {
+          Chat.unsubscribe();
+         }
+       }, [])   
