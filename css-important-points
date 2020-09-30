@@ -1,0 +1,19 @@
+https://www.w3schools.com/css/css_selectors.asp
+
+1. What is CSS selectors ?
+  Ans: CSS selectors are used to find the HTMl which needs to be styled.
+    Simple Selectors (select elements based on name, id, class)
+      * {} -> Universal selector
+      p {} -> Selector based on HTML element name
+      #myId {} -> Selector based on ID
+      .myclass {} -> Selector based on classname defined on html element.
+      p .myclass {} -> To target only p element with myclass as classname.
+      h1, h2, p {} -> Grouping of selector. Now these styles will be applied to all h1, h2 and p elements.
+    
+    Combinator selectors (select elements based on a specific relationship between them)
+      div p {} -> Desendent selector. This will target all the p tags which are under div.
+      div > p -> The child selector selects all elements that are the children of a specified element
+      
+    Pseudo-Class selector (select elements based on a certain state)
+    Pseudo-element selector (select and style a part of an element))
+    Attribute selector (select elements based on an attribute or attribute value)
