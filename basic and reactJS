@@ -10,7 +10,6 @@ Advance React :
 - Explain Component lifecycle of react js with sequence and explaination each method.
 - What is state Lifting in react js
 - How React.js works?
-- What is Redux and how it works ?
 - What is higer order component and how it works?
 - Difference b/w framework and liberary
 - Server side rendering
@@ -47,10 +46,11 @@ Basic :
 
 
 - What isRedux and how it works?
+- Benefits of Redux
 - what is reducer 
   Ans : Reducers are just pure functions that take the previous state and an action, and return the next state. Remember to return new state objects, instead of 	mutating the previous state
 
-- Benefits of Redux
+
 - DIff between const, let, var
 - Difference b/w smart component, class component
 - Diff b/w dumb component, presentional component and functional component
