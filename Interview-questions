@@ -1,0 +1,15 @@
+Nagarro:
+
+- Introduction
+- Benefits of ES6
+- What is shallow rendering
+- What are Pure Components. If we implement shouldComponentUpdate with shallow comparison manually, will it be same as Pure Components ?
+- What are Pure functions.
+- What is synthetic event
+- What is the benefit of arrow functions ?
+- What is template literals ?
+- Difference between const, let and var ?
+- For in, For Of -> Can we use for in over array and vice versa
+- What is Map and Set in JS
+- Lifecycle of event
+- event.stopPropgate() and event.stopsubsequentPropgate()
