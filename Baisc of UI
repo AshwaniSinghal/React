@@ -5,4 +5,5 @@ https://www.w3schools.com/css/css_boxmodel.asp
 How does memory management happens in UI
 What is the output of null === undefined -> false. It will be true if its ==
 what is not defined and undefined
+Difference between const, let, var
 What are Pure functions: Such functions are called “pure” because they do not attempt to change their inputs, and always return the same result for the same inputs.
