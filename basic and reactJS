@@ -50,8 +50,6 @@ Basic :
 - what is reducer 
   Ans : Reducers are just pure functions that take the previous state and an action, and return the next state. Remember to return new state objects, instead of 	mutating the previous state
 
-
-- DIff between const, let, var
 - Difference b/w smart component, class component
 - Diff b/w dumb component, presentional component and functional component
 - TDD and BDD 
