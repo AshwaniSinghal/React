@@ -1,0 +1,43 @@
+1. What is DOM ?
+DOM stands for Document Object Model. It represent the entire web page. We can access any element, attribute, event of web page using document.
+
+2. Methods to get the element from DOM ?
+document.getElementById("id")
+document.getElementsByTageName("h1")
+document.getElementsByClassName("myclass")
+document.querySelectorAll("h1 .myclass") -> This will pull all the h1's which has myclass as classname.
+
+3. Methods to update the content of Web Page ?
+document.getElementById("id").innerHTML = "My New HTML";
+document.getElementById("id").attribute = value;
+document.getElementById("id").style.property = value;
+document.getElementById("id").setAttribute(attributeName, value);
+
+4. Other Methods
+document.createElement(element)
+document.removeChild(element)
+document.appendChild(element)
+document.replaceChild(newChild, oldChild)
+document.write(text) -> Write into an HTML output stream.
+
+5. Events and Event listener :
+To add a new event to an HTML element -> document.getElementById("myBtn").onclick = function () {};
+
+.addEventListener(eventName, callbackfunction, useCapture) -> To add an event dynmically on element. Using this method we can add mutilple events on same element.
+It can be used to add event on any HTML DOM object like windows etc.
+e.g: document.getElementById("myBtn").addEventListener("click", function1 () {});
+document.getElementById("myBtn").addEventListener("click", function2 () {});
+window.addEventListener("onresize", function() {})
+
+.removeEventListener()
+document.getElementById("myBtn").removeEventListener("click", function1 () {})
+
+6. What is Event Bubbling and Event capturing ?
+These are the two event propagation methods in the HTML DOM. With the addEventListener() method you can specify the propagation type by using the "useCapture" parameter
+
+Event propagation is a way of defining the element order when an event occurs. If you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's "click" event should be handled first?
+
+In bubbling the inner most element's event is handled first and then the outer: the <p> element's click event is handled first, then the <div> element's click event.
+
+In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.
+
