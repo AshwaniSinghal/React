@@ -1,3 +1,5 @@
+Reference: https://learnersbucket.com/tutorials/es6/es6-intro/
+
 Q: Benefits of Using ES6 ?
 Ans: It is more powerfull then regular javascript because of below items :
   - More properties on Object. e.g: Objec.assign({}, {a:1}, {b:2}) -> {a:1, b:2}
@@ -61,4 +63,4 @@ Ans: const a = (x=1, y=2) => x + y;
 O/P : a() will be 3
 
 Q: What are the new functions of array which are available in ES6 ?
-Ans: forEach(), map(), filter()
+Ans: forEach(), map(), filter(), for of, for in
