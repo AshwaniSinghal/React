@@ -1,49 +1,68 @@
-1. What is DOM ?
-DOM stands for Document Object Model. It represent the entire web page. We can access any element, attribute, event of web page using document.
+1. Q: What is DOM ?
+  Ans: DOM stands for Document Object Model. It represent the entire web page. We can access any element, attribute, event of web page using document.
 
-2. Methods to get the element from DOM ?
-document.getElementById("id")
-document.getElementsByTageName("h1")
-document.getElementsByClassName("myclass")
-document.querySelectorAll("h1 .myclass") -> This will pull all the h1's which has myclass as classname.
+2. Q: Methods to get the element from DOM ?
+  Ans: document.getElementById("id")
+       document.getElementsByTageName("h1")
+       document.getElementsByClassName("myclass")
+       document.querySelectorAll("h1 .myclass") -> This will pull all the h1's which has myclass as classname.
 
-3. Methods to update the content of Web Page ?
-document.getElementById("id").innerHTML = "My New HTML";
-document.getElementById("id").attribute = value;
-document.getElementById("id").style.property = value;
-document.getElementById("id").setAttribute(attributeName, value);
+3. Q: Methods to update the content of Web Page ?
+  Ans: document.getElementById("id").innerHTML = "My New HTML";
+       document.getElementById("id").attribute = value;
+       document.getElementById("id").style.property = value;
+       document.getElementById("id").setAttribute(attributeName, value);
 
-4. Other Methods
-document.createElement(element)
-document.removeChild(element)
-document.appendChild(element)
-document.replaceChild(newChild, oldChild)
-document.write(text) -> Write into an HTML output stream.
+4. Q: Other Methods
+  Ans: document.createElement(element)
+       document.removeChild(element)
+       document.appendChild(element)
+       document.replaceChild(newChild, oldChild)
+       document.write(text) -> Write into an HTML output stream.
 
-5. Events and Event listener :
-To add a new event to an HTML element -> document.getElementById("myBtn").onclick = function () {};
+5. Q: What is Events and Event listeners ?
+  Ans: Events are the something which gets triggered whenever an action happens in web page. 
+       To add a new event to an HTML element -> document.getElementById("myBtn").onclick = function () {};
 
-.addEventListener(eventName, callbackfunction, useCapture) -> To add an event dynmically on element. Using this method we can add mutilple events on same element.
-It can be used to add event on any HTML DOM object like windows etc.
-e.g: document.getElementById("myBtn").addEventListener("click", function1 () {});
-document.getElementById("myBtn").addEventListener("click", function2 () {});
-window.addEventListener("onresize", function() {})
+  addEventListener(eventName, callbackfunction, useCapture) -> To add an event dynmically on element. Using this method we can add mutilple events on same element.
+      It can be used to add event on any HTML DOM object like windows etc.
+      e.g:
+      document.getElementById("myBtn").addEventListener("click", function1 () {});
+      document.getElementById("myBtn").addEventListener("click", function2 () {});
+      window.addEventListener("onresize", function() {})
 
-.removeEventListener()
-document.getElementById("myBtn").removeEventListener("click", function1 () {})
+  removeEventListener() -> This method is used to remove an event listener on a particular DOM object/DOM element.
+  e.g: document.getElementById("myBtn").removeEventListener("click", function1 () {})
+  
+6. Q: What is Event Lifecycle/Event Propagation ?
+  Ans: Event propagation is a way of defining the element order when an event occurs. An event consist of three phases:
+  Capture phase -> The capture phase comprises all the DOM elements on trip from the Document to the parent of the target element on which an event was triggered.
+  e.g: document -> HTML -> body -> div
+  
+  Transition Phase -> The target phase occurs when the event reaches the target. Then event fired on the target, before reversing to bubbling phase.
+  e.g: Button
+  
+  Bubbling Phase -> The bubbling phase comprises all the DOM elements encountered on the return trip from the target back to the Document.
+  e.g.: div -> body -> HTML -> document
+  
+  element.addEventListener("click", fn, false) -> when the thrid argument is false then event is going to propgate from target phase to bubbling phase.
+  e.g: button -> div -> body -> HTML -> document
+  
+  element.addEventListener("click", fn, true) -> when the thrid argument is true then event is going to propgate from capture phase to target phase.
+  e.g: document -> HTML -> body -> div -> button
+  
+  event.stopPropagation() -> When this method is called it will stop the further propgation in the tree above or below
+  (depends on if event is in capture or bubble phase).
+  
+  event.stopImmediatePropgation() -> This method will stop calling the rest of event listener registered on same element.
+  e.g: if a button has three "click" event listenered registered on it, and from first event listener we apply this function 
+  then it will stop calling rest of two listeners. This will still do the event propagation in the event tree.
+  
+  event.preventDefault() -> This is used to override the default behaviour of an event.
+  e.g.: <a href="www.google.com"> tag has a default behavior of redirecting the URL in the same window.
+  Once we apply preventDefault() method, it won't redirect the user to the url.
 
-6. What is Event Bubbling and Event capturing ?
-These are the two event propagation methods in the HTML DOM. With the addEventListener() method you can specify the propagation type by using the "useCapture" parameter
-
-Event propagation is a way of defining the element order when an event occurs. If you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's "click" event should be handled first?
-
-In bubbling the inner most element's event is handled first and then the outer: the <p> element's click event is handled first, then the <div> element's click event.
-
-In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.
-
-7. Event Lifecycle ?
-Capture Phase-> Target Phase->Bubbling Phase
-
-Event propgation or event lifecycle -> https://www.youtube.com/watch?v=BtOrr7oTH_8&t=19s
-e.stopPropgatation v/s e.stopImmediatePropgation -> https://www.youtube.com/watch?v=qB_9rF32EaI
-e.preventDefault -> https://www.youtube.com/watch?v=_cN7H2bWKZQ
+  Reading Reference:
+  Event propgation or event lifecycle -> https://www.youtube.com/watch?v=BtOrr7oTH_8&t=19s
+  e.stopPropgatation v/s e.stopImmediatePropgation -> https://www.youtube.com/watch?v=qB_9rF32EaI
+  e.preventDefault -> https://www.youtube.com/watch?v=_cN7H2bWKZQ
