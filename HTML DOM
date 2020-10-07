@@ -41,3 +41,9 @@ In bubbling the inner most element's event is handled first and then the outer: 
 
 In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.
 
+7. Event Lifecycle ?
+Capture Phase-> Target Phase->Bubbling Phase
+
+Event propgation or event lifecycle -> https://www.youtube.com/watch?v=BtOrr7oTH_8&t=19s
+e.stopPropgatation v/s e.stopImmediatePropgation -> https://www.youtube.com/watch?v=qB_9rF32EaI
+e.preventDefault -> https://www.youtube.com/watch?v=_cN7H2bWKZQ
