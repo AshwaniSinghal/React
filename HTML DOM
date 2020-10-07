@@ -55,6 +55,7 @@
   (depends on if event is in capture or bubble phase).
   
   event.stopImmediatePropgation() -> This method will stop calling the rest of event listener registered on same element.
+  Along with this, it will not let event propgate further in tree.
   e.g: if a button has three "click" event listenered registered on it, and from first event listener we apply this function 
   then it will stop calling rest of two listeners. This will still do the event propagation in the event tree.
   
@@ -66,3 +67,4 @@
   Event propgation or event lifecycle -> https://www.youtube.com/watch?v=BtOrr7oTH_8&t=19s
   e.stopPropgatation v/s e.stopImmediatePropgation -> https://www.youtube.com/watch?v=qB_9rF32EaI
   e.preventDefault -> https://www.youtube.com/watch?v=_cN7H2bWKZQ
+  Sample code : https://jsfiddle.net/dxjkm1Ls/1/
