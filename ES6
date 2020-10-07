@@ -1,0 +1,64 @@
+Q: Benefits of Using ES6 ?
+Ans: It is more powerfull then regular javascript because of below items :
+  - More properties on Object. e.g: Objec.assign({}, {a:1}, {b:2}) -> {a:1, b:2}
+  - It has arrow functions. -> () => {}
+  - Spread operator. -> {...a, ...b}
+  - Property shorthand
+  - You can define the default value of parameter in function
+  - Generator functions -> function* ()
+  - Blocked scope variables (i.e. let and const)
+  - Destructing Assignment. e.g.: const [a, b, ...rest] = [10,20,30,40,50]
+  - Template Literal which procide easy way to write string-> `${}`
+  - Sync and await
+  
+  
+Q: Difference between let/const/var ?
+Ans:
+var -> var was introduced in old javascript format. It's scope can be global as well as local based on where it is being declared. You can reassign value to
+a var. You can redclare the var with same in same JS file.
+
+const -> const is a block scope variable which means it can be defined in any block of expression, statement (i.e. {}). Example of blocks are loops,
+if else statement, any function. You must initialize the value of a const. You can't override the value of const. But if the value is object then you can modify
+the property of objects.
+
+let -> Let is also a block scope variable. You can reassign the values to a variable declared with let. You don't need to initalize the let variables.
+
+Q: What is string literal/Template Literal ?
+Ans: String literal provides an easy way to write/concat a string. We need to use ``(Back ticks) for using string literal. You can use ${} for adding any text
+dynamically. You can use double quotes (""), single quote ('') within string literals.
+e.g: const a = `My name is ${ashwani} and my age is ${getAge()}`;
+
+Q: What is Obect literal/Object shorthand ?
+Ans: When the key and value are same in an object, we don't need to repeat the key/value. We can simply write one.
+e.g: {name: name, age: age} -> {name, age}
+
+Q: What is object deconstruction ?
+Ans: It's used to access the properties directly into variable.
+e.g: const list = {name: "Ashwani", age: 28, address: "My Addresss"}
+const {name, age} = list;
+
+Q: What are arrow functions and benefits of using arrow function ?
+Ans: Arrow functions are syntectic sugar on top of regular JS function. It does have some powerfull features as well :
+- arrow functions are less verbose than traditional functions
+- You don't need to write return statement if we are not having mutiple line of code.
+- Context binding -> Arrow functions take this reference from surrounding. You don't need to bind the functions specifically with "this".
+  e.g: this.handleClick.bind(this)
+    const a = {
+      name: "Ashwani",
+      age: 28,
+      getName: function() {
+        alert("First");
+        const b = () => {
+          console.log(this.name);
+        }
+      }
+    };
+    
+    O/p -> First, Ashwani. Since arrow function doesn't create a reference of this variable. It takes it from the first available scope.
+    
+Q: What is function default parameter ?
+Ans: const a = (x=1, y=2) => x + y;
+O/P : a() will be 3
+
+Q: What are the new functions of array which are available in ES6 ?
+Ans: forEach(), map(), filter()
