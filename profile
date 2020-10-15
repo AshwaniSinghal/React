@@ -13,14 +13,14 @@ Talk about
 - Created Minimum viable product with error cases as well. (Generally business go for happy path during MVP)
 - Working under Agile Scrum team
 
+Application worked on:
+- Check Cashing, Money transfer, Rapid Pay (Fast money transfer), Rapid Pay Admin
+- HearthBeat
+- Price Investment
+- Data Cafe and Analytics
+- Global Data portal
 
-Check Cashing
-Money transfer
-Rapid Pay (Fast money transfer)
-Rapid Pay Admin
-Tax Payment
-
-React - 15, Webpack, babel, HTML 5, Javascript, CSS (Box model and specificity)
+React - 16, Webpack, babel, HTML 5, Javascript, CSS (Box model and specificity)
 Java - 1.7 & 1.8
 Spring MVC
 JIRA
