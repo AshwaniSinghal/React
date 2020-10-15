@@ -1,0 +1,48 @@
+Q: Introduce yourself.
+- Name
+- Current Designation
+- Years of experience
+- My total experience with is with Walmart
+- Worked in different areas of Walmart such as Financial Services, Pricing, Global Data
+- Worked on Rapid Pay/Check Cashing Application, Admin part of Rapid Pay, HeartBeat, Price Investment, Data Cafe and Analytics, Global Data Portal
+- Tech Stack (React JS, Redux, HTML, CSS, Javascript, Webpack)
+- Following CI/CD for build and deployment of Application (Looper, Concord, One-ops)
+- Works based out of two weeks agile sprint. (Daily Standup, Backlog grooming, Sprint planning)
+- Use JIRA for tracking of work and github to maintain the source code of application.
+- Work on Requirement Gathering from business; Design Discussion with Tech Lead; Peer Code reviews.
+- Being a senior resource i do make sure the features/functionalities are going to PROD with well tested and quality code and takes responsibility of application.
+- Have experience working with Geographically distributed team.
+
+Q. What are your achievements.
+- Domain automation
+- Stepped up from my role and Lead the Merchandising UI team. Recieved Helmet Award/Most valuable team player Award from Mercants.
+- Developed the complex and flexible Dashboard for merchants. It's a dynamic dashboard which helps merchant to look at the data at any aggregative level.
+- Worked under exterme pressure for finance team during first release and make the quality deliverables on time.
+- Created reusable components in Finance and merchandising team.
+
+Q. Most complex requirement coded so far ?
+Merchandising:
+- Dynamic dashboard for in-stock to get data at any aggregate level.
+- Filter Drawer.
+
+Finance:
+- Responsiveness of Finance Application.
+- Design of Application and Cards.
+
+- Price investment Logic. (Aldi, Nielson, PPE, EDLP, Line items, Ladder Items)
+
+Technical
+- Decoupling of finance application from core.
+- Feature Toggling
+- Error Boundary in finance application.
+
+Q Most complex reusable component written so far?
+- Making finacne application responsive; Filter Bar; Dynamic generation of cards with animation; Automatic domain onboarding; Integration with MITI and SSO
+
+Q What are the few metrics used in Agile
+
+
+- Can you tell me more about the project and the team ?
+- what are your expectations from the candidate on this project? 
+- Currently, what’s the largest problem team is facing ? 
+- Are there any hesitations or concerns that you have about MY ability to complete this project?
