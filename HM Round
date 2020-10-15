@@ -63,7 +63,15 @@ Since we need to thik through the requirement and design ahead for a feature.
 - if a consumer's feedback or communications are not clear, a developer might focus on the wrong areas of development
 
 Q What are the few metrics used in Agile
+- Burndown Chart
+  Track the total work remaining and project the likelihood of achieving the sprint goal. This helps your team manage its progress and respond accordingly.
 
+- Velocity Chart
+  Track the amount of work completed from sprint to sprint. This helps you determine your team's velocity 
+  and estimate the work your team can realistically achieve in future sprints.
+
+- Epic Report
+  Understand the progress towards completing an epic over time. This helps you manage your team's progress by tracking the remaining incomplete/unestimated work.
 
 - Can you tell me more about the project and the team ?
 - what are your expectations from the candidate on this project? 
