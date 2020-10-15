@@ -39,6 +39,29 @@ Technical
 Q Most complex reusable component written so far?
 - Making finacne application responsive; Filter Bar; Dynamic generation of cards with animation; Automatic domain onboarding; Integration with MITI and SSO
 
+Agile Principles:
+- Dedicated teams
+- Upfront Design
+- Maintaining a Backlog
+- Daily Standup for status
+- Sprint planning and Retrospectives
+
+Benefits of Agile
+- Improved Quality of product since team can foucs on a small piece of requirement at once.
+- Stackholders engagment at every stage (Design, Development, Testing, Post deployment feedback)
+- Foucs of business value and users (provides the opportunity to beta test software after each Sprint, gaining valuable feedback early in the project)
+- Early and Predecitable delivery (Since team can foucs on incremental deployment of feature)
+- Allows for Change (there is an opportunity to constantly refine and reprioritize the overall product backlog)
+
+Disadvantage of Agile
+- UnPredictable Cost of entire project (Since the requirements will be delivered in small chunks)
+- If there is a change in priority, it gets hard to manage the change technically sometimes.
+Since we need to thik through the requirement and design ahead for a feature.
+- Team can get easly distracted from actual development due to mutiple iteration of planning and grooming.
+- with Remote working, team is not able to interact well and it leads to miscommunication between product, tech leads and developers.
+- Lack of documentation
+- if a consumer's feedback or communications are not clear, a developer might focus on the wrong areas of development
+
 Q What are the few metrics used in Agile
 
 
