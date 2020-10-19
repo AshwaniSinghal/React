@@ -166,7 +166,7 @@
     
 16. ReactDOM methods:
     ReactDOM.render(component, container where component needs to be added in DOM)
-    ReactDOM.hyderate()
+    ReactDOM.hyderate() -> Same as render(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer.
     ReactDOM.unmountComponentAtNode()
     ReactDOM.findDOMNode() -> deprycated
     ReactDOM.createPortal(child, container where child needs to be added in DOM)
