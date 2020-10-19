@@ -154,8 +154,14 @@
     React.ForwardRef()
     
     Suspense: Suspense lets components “wait” for something before rendering. Today, Suspense only supports one use case: loading components dynamically with React.lazy
-    React.Suspense
-    React.lazy -> lets you define a component that is loaded dynamically. This helps reduce the bundle size to delay loading components that aren’t used during the initial render.. But this require to have Suspese somewhere above in tree.
+    React.Suspense ->
+        const OtherComponent = React.lazy(() => import('./OtherComponent'));
+        <React.Suspense fallback={<Spinner />}>
+          <OtherComponent />
+        </React.Suspense>
+    React.lazy -> lets you define a component that is loaded dynamically. This helps reduce the bundle size to delay loading components that aren’t used during the initial render.
+                  But this require to have Suspese somewhere above in tree.
+                  const SomeComponent = React.lazy(() => import('./SomeComponent'));
     
     
 16. ReactDOM methods:
