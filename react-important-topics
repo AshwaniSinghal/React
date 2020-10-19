@@ -143,7 +143,7 @@
     
     For Manuplating Elements:
     cloneElement()
-    isValidElement()
+    isValidElement() -> Verifies the object is a React element. Returns true or false.
     React.Children
     
     For Nesting multiple HTML without adding extra element in tree:
