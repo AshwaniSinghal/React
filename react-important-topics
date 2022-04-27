@@ -183,6 +183,14 @@
     
     Note: Here element is <App /> and container is output of document.getElementById("#mydiv").
     
+17. React DOM Client Methods :
+    createRoot -> Use to create root element using container and then root can be to render the React Element inside it.
+      e.g.  const root = createRoot(container);
+            root.render(element);
+            root.unmount() -> Root can also be unmounted using this method
+    
+    hyderateRoot -> same as createRoot(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer
+    
 17. DOM Elements:
     checked -> To mark a checkbox/radio button as default checked for input type="checkbox".
     className -> To pass css to html
