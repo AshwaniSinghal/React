@@ -135,16 +135,21 @@
     For Creating Component:
     React.Component
     React.PureComponent
-    React.memo
+    React.memo -> Its an HOC. If your component renders the same result given the same props, you can wrap it in a call to React.memo 
+                  for a performance boost in some cases by memoizing the result. It will compare previous props with current and re-render 
+                  the component only when prop changes.
+                  React.memo(function myComponent (props) {
+                     return <div>{props.name}</div>
+                  })
     
     For Creating Component without JSX:
-    React.createElement()
-    React.createFactory()
+    React.createElement(type, {..props}, children) -> Used to create a new React element. it's mostly used when we use React with JSX.
+    React.createFactory(type) -> Return an react element of given type.
     
     For Manuplating Elements:
-    cloneElement()
+    React.cloneElement(element, [config], [...children]) -> Will clone the existing element and replace the children. It will shallow merge the props and replace the key's & ref's.
     isValidElement() -> Verifies the object is a React element. Returns true or false.
-    React.Children
+    React.Children -> Provide few utilities to deal with this.props.children data structure.
     
     For Nesting multiple HTML without adding extra element in tree:
     React.Fragment
@@ -162,6 +167,9 @@
     React.lazy -> lets you define a component that is loaded dynamically. This helps reduce the bundle size to delay loading components that aren’t used during the initial render.
                   But this require to have Suspese somewhere above in tree.
                   const SomeComponent = React.lazy(() => import('./SomeComponent'));
+                  
+    React.startTransition(callback) -> Provides a way to not show fallback UI from react suspense. 
+    React.useTransition -> This is a React hook which is replacement of startTransition method. It provide isPending flag as well along with callback.
     
     
 16. ReactDOM methods:
