@@ -37,4 +37,33 @@
              return function unsubscribe() {
               Chat.unsubscribe();
              }
-           }, [])   
+           }, [])  
+           
+           
+6. Hooks API Reference :
+  useState
+  useEffect
+  useContext -> Use to subscribe to nearest context change. const value = useContext(mycontext). 
+                This works as MyContext.Consumer part. We still need to have MyContext.Provider part in the application.
+                
+  useReducer -> used to get data from reducer where reducer is managing the state of application. 
+                If we return same state from reducer as of current state, React will bail out the re-rendering of component.
+                e.g. : const [state, dispatch] = userReducer(reducer, initialValueOfReducer)
+                
+                
+  useCallback(callback, [attributes]) ->  Return a memoized callback and trigger the callback function onlu if any value of the second argument changes.
+  useMemo(() => computeExpensiveValue(a, b), [a,b]) -> return a memoized value. it will recomute the value only if any value change in a or b.
+  useRef() ->
+  useTransiiton() -> Returns a stateful isPending value and a function to start the transition.
+                     const [isPending, startTransition] = useTransiiton();
+
+  useId -> used to generate a unique ID which will be stable across client and server
+  
+  
+  
+  
+  
+  
+  
+  
+  
