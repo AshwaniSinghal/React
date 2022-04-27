@@ -95,6 +95,15 @@
 15. What is context in React ?
   Ans: Context are used to pass something to all the children of react tree. Context are created once and will be accessable by all the children's underneath.
        e.g.: theme.
+       
+15(A). What is React Test Renderer ?
+  Ans:  This package provides a React renderer that can be used to render React components to pure JavaScript objects, without depending on the DOM or a native mobile environment.
+        You can use Jest’s snapshot testing feature to automatically save a copy of the JSON tree to a file and check in your tests that it hasn’t changed: 
+       e.g.
+       import TestRenderer from 'react-test-renderer';
+       function Link(props) {return <a href={props.page}>{props.children}</a>}
+       const testRenderer = TestRenderer.create(<Link page="https://www.facebook.com/">Facebook</Link>);
+       console.log(testRenderer.toJSON());
         
 15. Lifecycle Methods: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
    Ans: Mount Sequence:
