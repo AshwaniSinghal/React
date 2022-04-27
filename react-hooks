@@ -11,7 +11,7 @@
     - It override the state variable completely instead of shallow merge it existing state
     - It can't be used inside class components or regular javascript function. It can only be used in functional components.
     - Only call Hooks at the top level. Don’t call Hooks inside loops, conditions, or nested functions
-    - Not recommended completely by react team. It’s still in experimental phase
+    - Doesn't support few lifecycle methods such as getSnapshotBeforeUpdate, componentDidCatch and getDerivedStateFromError
   
 4. What is useState Hook ?
   Ans: It is used to drive the state of a component
@@ -28,12 +28,13 @@
   }
   
 5. What is useEffect Hook ?
-  Ans: It is used majorily to execute lifecycle method, Data fetching, setting up a subscription, and manually changing the DOM in React components.
-       If we return a function then it will be called during unmounting of the component. Effects will be executed in the order they are defined in component.
-       useEffect(() => {
-         Chat.subscribe();
+  Ans:  It is used majorily to execute lifecycle method (componentDidMount, componentWillUnMount, componentDidUpdate), Data fetching, 
+        setting up a subscription, and manually changing the DOM in React components.
+        If we return a function then it will be called during unmounting of the component. Effects will be executed in the order they are defined in component.
+           useEffect(() => {
+             Chat.subscribe();
 
-         return function unsubscribe() {
-          Chat.unsubscribe();
-         }
-       }, [])   
+             return function unsubscribe() {
+              Chat.unsubscribe();
+             }
+           }, [])   
