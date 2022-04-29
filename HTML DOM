@@ -39,7 +39,7 @@
   Capture phase -> The capture phase comprises all the DOM elements on trip from the Document to the parent of the target element on which an event was triggered.
   e.g: document -> HTML -> body -> div
   
-  Transition Phase -> The target phase occurs when the event reaches the target. Then event fired on the target, before reversing to bubbling phase.
+  Target Phase -> The target phase occurs when the event reaches the target. Then event fired on the target, before reversing to bubbling phase.
   e.g: Button
   
   Bubbling Phase -> The bubbling phase comprises all the DOM elements encountered on the return trip from the target back to the Document.
