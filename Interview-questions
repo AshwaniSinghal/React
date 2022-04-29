@@ -12,4 +12,4 @@ Nagarro:
 - For in, For Of -> Can we use for in over array and vice versa
 - What is Map and Set in JS
 - Lifecycle of event
-- event.stopPropgate() and event.stopsubsequentPropgate()
+- event.stopPropgate() and event.stopImmediatePropgation()
