@@ -14,13 +14,18 @@ Q: Introduce yourself.
 - Have experience working with Geographically distributed team.
 
 Q. What are your achievements.
-- Domain automation
+- Worked as SM for the team.
 - Stepped up from my role and Lead the Merchandising UI team. Recieved Helmet Award/Most valuable team player Award from Mercants.
+- Setup React App from scratch and made SSO work locally.
+- Domain automation
 - Developed the complex and flexible Dashboard for merchants. It's a dynamic dashboard which helps merchant to look at the data at any aggregative level.
 - Worked under exterme pressure for finance team during first release and make the quality deliverables on time.
 - Created reusable components in Finance and merchandising team.
 
 Q. Most complex requirement coded so far ?
+Manufacturing:
+- Converted existing QM app to Mobile App using ionic cordova.
+
 Merchandising:
 - Dynamic dashboard for in-stock to get data at any aggregate level.
 - Filter Drawer.
@@ -64,14 +69,16 @@ Since we need to thik through the requirement and design ahead for a feature.
 
 Q What are the few metrics used in Agile
 - Burndown Chart
-  Track the total work remaining and project the likelihood of achieving the sprint goal. This helps your team manage its progress and respond accordingly.
+  Track the total work remaining in the project and likelihood of achieving the sprint goal. This helps your team manage its progress and 
+  respond accordingly.
 
 - Velocity Chart
   Track the amount of work completed from sprint to sprint. This helps you determine your team's velocity 
   and estimate the work your team can realistically achieve in future sprints.
 
 - Epic Report
-  Understand the progress towards completing an epic over time. This helps you manage your team's progress by tracking the remaining incomplete/unestimated work.
+  Understand the progress towards completing an epic over time. This helps you manage your team's progress by tracking the remaining 
+  incomplete/unestimated work.
 
 - Can you tell me more about the project and the team ?
 - what are your expectations from the candidate on this project? 
